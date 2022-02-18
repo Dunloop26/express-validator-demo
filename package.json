@@ -1,0 +1,25 @@
+{
+  "name": "express-architecture",
+  "version": "1.0.0",
+  "description": "Express API Architecture",
+  "main": "dist/index.ts",
+  "author": "dunas26",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js"
+  }
+}
